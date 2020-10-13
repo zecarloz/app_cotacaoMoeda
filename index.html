@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 05 Cotação moedas</title>
+</head>
+<body>
+    
+    <h1>Cotações de Moedas</h1>
+    <h4>Neste app vamos obter o valor da cotação do Dólar</h4>
+    <label for="moeda">Selecione a moeda</label>
+    <select name="" id="">
+        <option value="USD" class="dolar">USD</option>
+    </select><br><br>
+    <input type="submit" id="botao" value="Obter valor" onclick="valor()"/>
+    
+    <p>Valor em Real:</p>
+     <div id="resultado">===</div>     
+<script>  
+/* Sobre o objeto XMLHttpRequest:
+Temos dois métodos: OPEN e SEND
+No OPEN temos 3 parâmetros que são : 
+1) Metodo; pode ser GET ou POS
+2)url  == local do arquivo no servidor
+3) async que pode ser true ou false, por padrão será true ,pois queremos o carregamento assíncrono
+No SEND podemos colocar uma string caso o parâmetro seja Post */      
+    function valor() {
+        let moeda = document.querySelector('.dolar').value 
+        let xhttp = new XMLHttpRequest();
+        xhttp.open("GET",`https://economia.awesomeapi.com.br/json/all/${moeda}-BRL`,"true" )
+        xhttp.send();
+     xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var json = JSON.parse(this.responseText);
+                document.getElementById("resultado").innerHTML =  json.USD.high            
+            }           
+    }
+    }    
+</script>
+</body>
+</html>
