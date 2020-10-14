@@ -8,8 +8,8 @@
 <body>
     
     <h1>Cotações de Moedas</h1>
-    <h4>Neste app vamos obter o valor da cotação do Dólar</h4>
-    <label for="moeda">Selecione a moeda</label>
+    <h4>Neste app vamos obter o valor do Dólar</h4>
+    <label for="moeda">API dolar</label>
     <select name="" id="">
         <option value="USD" class="dolar">USD</option>
     </select><br><br>
@@ -18,13 +18,6 @@
     <p>Valor em Real:</p>
      <div id="resultado">===</div>     
 <script>  
-/* Sobre o objeto XMLHttpRequest:
-Temos dois métodos: OPEN e SEND
-No OPEN temos 3 parâmetros que são : 
-1) Metodo; pode ser GET ou POST
-2)url  == local do arquivo no servidor
-3) async que pode ser true ou false, por padrão será true ,pois queremos o carregamento assíncrono
-No SEND podemos colocar uma string caso o parâmetro seja Post */      
     function valor() {
         let moeda = document.querySelector('.dolar').value 
         let xhttp = new XMLHttpRequest();
