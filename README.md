@@ -6,17 +6,13 @@
 
 ## Technologias usadas
 * html 5
-* Typescript 4.0.5
-* ajax
-* XMLHttpRequest
+* Javascript
 
 ## Getting started
 
 * para rodar op projeto
 * Clone o repositorio 
 > $ npm install
-* Rode os comandos para subir o servidor e abrir no Browse
-> $ ng s -o
 
 ## Links
 
