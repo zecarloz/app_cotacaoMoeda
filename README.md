@@ -20,7 +20,7 @@
 
 ## Links
 
-- Repository: https://github.com/zecarloz/TreinamentoAngular.git
+- Repository: https://github.com/zecarloz/app_cotacaoMoeda.git
 
 ## Versão
 1.0.0.0
