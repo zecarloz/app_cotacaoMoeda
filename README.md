@@ -1,6 +1,6 @@
 # cotacaoMoeda
 
-## Este app verifica e informa o valor da moeda americana(dollar) em R$ === Reais ,
+## Este app verifica e informa o valor da moeda americana(dollar) em R$ === Reais Brasileiro
 * o objetivo principal é fixar os conhecimentos do objeto XMLHttpRequest 
 * e requisições consumindo serviços de uma Api .
 
